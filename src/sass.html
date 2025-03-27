@@ -49,13 +49,66 @@
       </section>
     </header>
     <main>
-      <!-- Sektion 1: Rubrik och text -->
-      <section class="intro">
+      <!-- Sektion 1: Rubrik, text med frågor -->
+      <section class="questions">
         <h2>SASS Utvärdering</h2>
         <h3>Vilka för- och nackdelar ser jag med SASS?</h3>
-        <p>Ett svar på frågan.</p>
+        <p>Fördelar:</p>
+        <ul>
+          <li>
+            Bättre struktur & underhållbarhet – Genom att dela upp koden i flera
+            SCSS-filer (partials) och använda 7-1-strukturen blir koden mer
+            organiserad och lättare att underhålla.
+          </li>
+          <li>
+            Variabler förenklar hanteringen av färger och typsnitt – Istället
+            för att skriva om samma färgkod eller typsnitt överallt, kan jag
+            använda variabler, vilket gör det enkelt att ändra designen på hela
+            webbplatsen.
+          </li>
+          <li>
+            Nesting gör koden mer läsbar – Att kunna nästla CSS-selektorer
+            minskar behovet av att upprepa klasser och gör koden mer
+            strukturerad.
+          </li>
+        </ul>
+        <p>Nackdelar:</p>
+        <ul>
+          <li>
+            Komplexare arbetsflöde - till skillnad från vanlig CSS kräver SASS
+            att jag använder en kompilator (t.ex. Parcel eller Node-skript) för
+            att generera en CSS-fil, vilket innebär fler steg att hålla koll på.
+          </li>
+          <li>
+            Kan bli för nästlad - om jag nästlar för många nivåer kan det bli
+            svårare att felsöka och underhålla koden.
+          </li>
+          <li>
+            Jag har själv inte lagt märke till det men som jag har förstått det,
+            stöder inte alla webbläsare avancerade funktioner. Även om SASS
+            genererar vanlig CSS kan vissa CSS-funktioner jag använder i mixins
+            eller variabler ändå ha kompatibilitetsproblem i äldre webbläsare.
+          </li>
+        </ul>
         <h3>Hur var det att komma igång att arbete med en CSS-preprocessor?</h3>
-        <p>Ett svar på frågan.</p>
+        <p>
+          Att komma igång med SASS var lite mer komblicerat jämfört med att
+          skriva vanlig CSS. Installationen via npm och att sätta upp en
+          kompilator (Parcel) känns inte som en självklarhet för mig, utan det
+          tar lite tid att förstå, men när allt är på plats blir det mycket
+          smidigare att skriva och organisera min CSS-kod.
+        </p>
+        <p>
+          Det är lite ovant att använda nesting och mixins, men ju mer jag
+          använder det, desto mer inser jag hur fördelaktigt det är. Att arbeta
+          med variabler och partials gjorde koden mer strukturerad, och jag
+          märker att det sparar tid i längden.
+        </p>
+        <p>
+          Sammanfattningsvis var det lite tröskel i början, men efter att ha
+          lärt mig grunderna upplevde jag SASS som ett mycket bättre sätt att
+          skriva CSS på!
+        </p>
       </section>
     </main>
   </body>
