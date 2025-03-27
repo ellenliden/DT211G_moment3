@@ -4,8 +4,7 @@
   }
   .news h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
-    color: $secondary-color;
+    margin-bottom: 4rem;
   }
   .news-container {
     display: flex;
@@ -14,7 +13,7 @@
     flex-wrap: wrap;
   }
   .news-item {
-    background: #fff;
+    background: $background-light;
     padding: 1rem;
     max-width: 16rem;
     box-shadow: $box-shadow;

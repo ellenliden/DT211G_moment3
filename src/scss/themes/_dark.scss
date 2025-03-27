@@ -1,15 +1,24 @@
 @media (prefers-color-scheme: dark) {
-    body {
-      background: $background-dark;
-      color: $text-light;
-    }
-  
-    .intro, .news {
-      background: darken($background-dark, 5%);
-    }
-  
-    .news-item {
-      background: lighten($background-dark, 10%);
-    }
+  body {
+    background: $background-dark;
+    color: $text-light;
   }
-  
+
+  .intro,
+  .news {
+    background: darken($background-dark, 5%);
+  }
+
+  .news-item {
+    background: lighten($background-dark, 10%);
+  }
+  h3, p {
+    color: $text-light;
+  }
+
+  h2 {
+    color: $accent-color;
+  }
+
+}
+
