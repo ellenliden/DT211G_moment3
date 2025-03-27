@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 30%;
+      text-align: left;
+      padding-bottom: 1rem;
+  
+      &.active {
+        display: flex;
+      }
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  

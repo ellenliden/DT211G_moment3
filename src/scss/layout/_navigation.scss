@@ -1,0 +1,45 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+  
+    .logo {
+      width: 3.2rem;
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      font-size: 1.1rem;
+  
+      li {
+        display: inline;
+      }
+  
+      a {
+        text-decoration: none;
+        color: $text-light;
+        padding: 0.5rem;
+        
+        &:hover {
+          text-decoration: underline;
+          color: $accent-color;
+        }
+      }
+    }
+
+    /* Hamburgermeny-knapp */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  }
+  
