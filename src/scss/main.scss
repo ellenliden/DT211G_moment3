@@ -6,10 +6,12 @@
 @import "layout/header";
 @import "layout/navigation";
 
+@import "pages/sass";
+
 @import "components/buttons";
 @import "components/cards";
 @import "components/text-block";
-
+@import "components/divider";
 
 @import "themes/light";
 @import "themes/dark";
