@@ -1,22 +1,52 @@
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 30%;
-    text-align: left;
-    padding-bottom: 1rem;
-
-    &.active {
-      display: flex;
-    }
+  .hamburger {
+    display: block;
+    color: $text-light;
   }
 
-  .menu-toggle {
-    display: block;
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    display: none; /* Dölj menyn som standard */
+    position: absolute;
+    top: 3.4rem;
+    left: 0;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: $primary-color;
+    min-width: 100%;
+    padding:2rem 0;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Visa menyn när .active läggs till */
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #a8a7a7;
+    margin: 1rem 2rem;
+  }
+
+  .news-item {
+    max-width: 80%;
+    box-shadow: $box-shadow;
+    text-align: left;
   }
 
   hr.divider {

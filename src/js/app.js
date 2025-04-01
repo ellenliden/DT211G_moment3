@@ -1,9 +1,16 @@
-//hamburgermeny på mindre skärmar
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    });
   });
 });

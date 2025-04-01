@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <a href="index.html">
           <img
             src="images/logo.png"
@@ -18,14 +18,25 @@
           />
         </a>
 
-        <button class="menu-toggle">☰</button>
-        <ul class="nav-links">
-          <li><a href="index.html">Start</a></li>
-          <li><a href="about.html">Se & göra</a></li>
-          <li><a href="sass.html">SASS</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Kontakt</a></li>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Start</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Se & göra</a>
+          </li>
+          <li class="nav-item">
+            <a href="sass.html" class="nav-link">SASS</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Om oss</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
         </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
       <section class="hero">
         <picture>
