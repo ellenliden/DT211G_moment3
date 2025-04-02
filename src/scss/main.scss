@@ -1,20 +1,20 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@use "abstracts/variables";
+@use "abstracts/mixins";
 
-@import "base/base";
+@use "base/base";
 
-@import "layout/header";
-@import "layout/navigation";
-@import "layout/footer";
+@use "layout/header";
+@use "layout/navigation";
+@use "layout/footer";
 
-@import "pages/sass";
+@use "pages/sass";
 
-@import "components/buttons";
-@import "components/cards";
-@import "components/text-block";
-@import "components/divider";
+@use "components/buttons";
+@use "components/cards";
+@use "components/text-block";
+@use "components/divider";
 
-@import "themes/light";
-@import "themes/dark";
+@use "themes/light";
+@use "themes/dark";
 
-@import "responsive";
+@use "responsive";
