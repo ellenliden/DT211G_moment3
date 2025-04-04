@@ -1,9 +1,11 @@
+@use "../abstracts/variables";
+
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: $text-light;
+  color: variables.$text-light;
   padding: 0.5rem;
 }
 
@@ -32,7 +34,7 @@ nav-links {
 }
 .nav-link:hover {
   text-decoration: underline;
-  color: $accent-color;
+  color: variables.$accent-color;
 }
 
 /* Hamburgermeny-knapp */
@@ -50,4 +52,3 @@ nav-links {
   transition: all 0.3s ease-in-out;
   background-color: rgb(255, 255, 255);
 }
-

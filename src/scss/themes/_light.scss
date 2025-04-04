@@ -1,7 +1,9 @@
+@use "../abstracts/variables";
+
 body {
-    background: $background-light;
-    color: $text-dark;
-  }
-  h2 {
-    color: $primary-color;
-  }
+  background: variables.$background-light;
+  color: variables.$text-dark;
+}
+h2 {
+  color: variables.$primary-color;
+}

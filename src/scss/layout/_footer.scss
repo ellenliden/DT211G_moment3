@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .container {
   max-width: 60rem;
   margin: auto;
@@ -11,7 +13,7 @@
   }
 }
 .footer {
-  background-color: $background-dark;
+  background-color: variables.$background-dark;
   padding: 7rem 0rem;
 
   .footer-col {
@@ -20,7 +22,7 @@
   }
   .footer-col h4 {
     font-size: 1.1rem;
-    color: $accent-color;
+    color: variables.$accent-color;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -31,7 +33,7 @@
     position: absolute;
     left: 0;
     bottom: -0.8rem;
-    background-color: $accent-color;
+    background-color: variables.$accent-color;
     height: 2px;
     box-sizing: border-box;
     width: 3rem;
@@ -42,7 +44,7 @@
   .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: $text-light;
+    color: variables.$text-light;
     text-decoration: none;
     font-weight: 300;
     color: #bbbbbb;
@@ -50,7 +52,7 @@
     transition: all 0.3s ease;
   }
   .footer-col ul li a:hover {
-    color: $text-light;
+    color: variables.$text-light;
     padding-left: 8px;
   }
   .footer-col .social-links a {
@@ -62,11 +64,11 @@
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: $text-light;
+    color: variables.$text-light;
     transition: all 0.5s ease;
   }
   .footer-col .social-links a:hover {
-    color: $background-dark;
-    background-color: $text-light;
+    color: variables.$background-dark;
+    background-color: variables.$text-light;
   }
 }

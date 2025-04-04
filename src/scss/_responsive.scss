@@ -1,7 +1,8 @@
+@use "abstracts/variables";
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    color: $text-light;
+    color: variables.$text-light;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -21,7 +22,7 @@
     left: 0;
     gap: 1rem;
     flex-direction: column;
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     min-width: 100%;
     padding: 2.6rem 0;
     text-align: center;
@@ -90,19 +91,7 @@
 
   .news-item {
     max-width: 80%;
-    box-shadow: $box-shadow;
-    text-align: left;
-  }
-
-  hr.divider {
-    border: none;
-    border-top: 1px solid #a8a7a7;
-    margin: 1rem 2rem;
-  }
-
-  .news-item {
-    max-width: 80%;
-    box-shadow: $box-shadow;
+    box-shadow: variables.$box-shadow;
     text-align: left;
   }
 

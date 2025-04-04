@@ -1,13 +1,14 @@
+@use "../abstracts/variables";
+
 * {
-    font-family: $font-stack;
-  }
-  
-  p {
-    line-height: 1.8rem;
-  }
-  
-  body {
-    background: $background-light;
-    color: $text-dark;
-  }
-  
+  font-family: variables.$font-stack;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+body {
+  background: variables.$background-light;
+  color: variables.$text-dark;
+}
