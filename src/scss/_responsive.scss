@@ -16,30 +16,31 @@
   }
 
   .nav-menu {
-    display: none; /* Dölj menyn som standard */
+    display: none; //Dölj menyn som standard
     position: absolute;
-    top: 3.4rem;
+    top: 3rem;
     left: 0;
-    gap: 1rem;
+    gap: 1.1rem;
     flex-direction: column;
     background-color: variables.$primary-color;
     min-width: 100%;
-    padding: 2.6rem 0;
+    padding: 3rem 0;
     text-align: center;
     transition: 0.3s;
     z-index: 1000;
   }
 
   .nav-menu.active {
-    display: flex; /* Visa menyn när .active läggs till */
+    display: flex; //Visa menyn när .active läggs till
   }
 
   .nav-item {
     margin: 16px 0;
   }
+  
 
   .hero {
-    height: 60vh; /* Sätter höjden direkt så att inget överlappar */
+    height: 60vh; //Sätter höjden direkt så att inget överlappar
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -90,7 +91,7 @@
   }
 
   .news-item {
-    max-width: 80%;
+    min-width: 70%;
     box-shadow: variables.$box-shadow;
     text-align: left;
   }
@@ -105,6 +106,42 @@
     li {
       text-align: left;
       margin-left: 2rem;
+    }
+  }
+  .footer {
+    .footer-col {
+      width: 100%;
+      margin-bottom: 2rem;
+      text-align: center;
+      margin-left: 0;
+      padding-left: 0;
+
+      h4::before {
+        display: none;
+      }
+      h4 {
+        padding-left: 0;
+        margin-left: 9rem;
+        text-align: left;
+      }
+
+      ul li a {
+        padding-left: 0;
+        margin-left: 7rem;
+        text-align: left;
+      }
+
+      &.social .social-links {
+        justify-content: left;
+        margin-left: 9rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .row {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
